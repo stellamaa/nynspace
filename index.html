@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nyn Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+     <!-- /* <div class="image-container"><img src="PEDELI.jpg" alt="image of mountains"></div> */ -->
+  <section class="landing">
+    <h1>Nyn Space</h1>
+    <button class="scroll-down">꩜</button>
+  </section>
+  <section class="landing-text">
+    <div class="text">
+<p>finding the way back to the present moment through meditation and mindfulness.</p>
+    </div></section>
+
+    </div>
+  <!-- Landing Section -->
+
+  <!-- Menu Button -->
+  <div class="burger" id="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+    <div class="about-content">
+      <button class="close-about" onclick="closeAbout()">×</button>
+      <h3>Hi</h3>
+      <p>My name is Stella and I run Nyn Space, a meditation and experimental mindfulness practise that focuses on creativity and self-realisation. As a certified Yoga Nidra Teacher, I offer guided meditation sessions anywhere you can lay comfortably; in the work place, art studios, festivals, most places can be transformed into a space of presence and groundedness. </p>
+      <br>
+      <p>Nyn is the space where everything is possible, where chaos becomes clarity, stress becomes calmness and ideas and creativity flow freely.</p>
+    </div>
+  </div>
+
+  <!-- Sidebar Menu -->
+  <nav class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="#about" onclick="toggleAbout()">About</a></li>
+      <li><a href="#sessions" onclick="toggleSessions()">Sessions</a></li>
+      <li><a href="#contact" onclick="toggleContact()">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="form-wrapper">
+      <h2>Get in touch</h2>
+      <form>
+        <select type="select" >
+          <option value="general">General Inquiry</option>
+          <option value="support">Support</option>
+          <option value="feedback">Feedback</option>
+        </select>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

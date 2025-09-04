@@ -4,21 +4,64 @@
       box-sizing: border-box;
     }
 
+
+
+    /* @font-face {
+       font-family: "baunk" ;
+      src: url(Baunk.ttf);
+    } */
+    @font-face {
+     
+      font-family: "hello";
+      src: url(Arnaiz.ttf) ;
+    }
+
+    @font-face{
+      font-family: "satoshi";
+      src: url(Satoshi-Variable.ttf);
+    }
+
+     @font-face{
+      font-family: "monor";
+      src: url(Monor_Regular.otf);
+    }
+ @font-face {
+  font-family: "epi";
+  src: url(Epilogue-Variable.ttf);
+ }
+
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       background: white; /* Yellow */
-      overflow-x: hidden;
+      overflow: hidden;
       cursor: none; /* hide default cursor */
       background-image: url(PEDELI.jpg);
     }
 
+.fake-cursor {
+  position: fixed;
+  cursor: none;
+  pointer-events: none; /* so it doesn’t block clicks */
+  font-size: 24px;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  font-family: "monor";
+}
+
     .container {
+      height: 100vh;
       margin: 0 auto;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 20%;
     }
-
+    .scroll-down {
+      margin-left: 15px;
+    }
+  .header p {
+    margin-top: -15px;
+    margin-left: 5px;
+  }
 
     /* Landing */
     .landing {
@@ -28,15 +71,23 @@
       align-items: center;
       flex-direction: column;
       text-align: center;
+      color: white;
+
     }
 
     .landing h1 {
+      display: none;
       font-size: 1.5rem;
       font-weight: 300;
-      color: black;
-      text-decoration-line: overline;
-      text-decoration-style: dotted;
-      letter-spacing: 0.02em;
+      letter-spacing: 0.5em;
+
+    }
+
+    .landing p {
+      display: flex;
+      align-items: baseline;
+      text-align: justify;
+      font-family: "satoshi";
     }
 
     .scroll-down {
@@ -44,10 +95,21 @@
       background: none;
       border: none;
       font-size: 1.5rem;
+      margin: 12px 5px 16px 50px;
       cursor: pointer;
       color: black;
-      animation: continuousSpin 4s linear infinite;
+      animation: continuousSpin 10s linear infinite;
     }
+
+    .scroll-down.playing {
+  color: white;              /* when audio is playing */
+}
+
+.header p {
+  margin-left: 10px;
+  font-family: "monor";
+  color: rgba(255, 255, 255, 0.768);
+}
 
     @keyframes continuousSpin {
       0% {
@@ -105,7 +167,7 @@
 
     .burger.open::after {
       content: '( CLOSE )';
-      font-family: 'Inter', sans-serif;
+      font-family: "epi";
       font-size: 13px;
       font-weight: 400;
       color: black;
@@ -123,8 +185,6 @@
       height: auto;
       background: rgba(255, 204, 0, 0.614);
       padding: 20px;
-      border-radius: 8px;
-      border: 1px solid black;
     }
 
     .burger.about-mode span, .burger.sessions-mode span, .burger.contact-mode span {
@@ -137,7 +197,7 @@
 
     .about-content, .sessions-content, .contact-content {
       display: none;
-      font-family: 'Inter', sans-serif;
+      font-family: "epi";
       font-size: 14px;
       font-weight: 300;
       color: black;
@@ -172,7 +232,6 @@
       padding: 60px 20px;
       transition: right 0.3s ease;
       z-index: 999;
-      border-left: 1px solid black;
     }
 
     .sidebar ul {
@@ -185,6 +244,7 @@
 
     .sidebar ul li a {
       text-decoration: none;
+      font-family: "epi";
       font-size: 1.5rem;
       color: black;
       transition: color 0.2s ease;
@@ -250,32 +310,10 @@
       background: #e6b50a;
     }
 
-    /* Custom Cursor */
-    .cursor {
-      position: fixed;
-      width: 105px;
-      height: 75px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.7);
-      pointer-events: none;
-      mix-blend-mode: difference;
-      filter: blur(28px);
-      transform: translate(-50%, -50%);
-      transition: background 0.6s ease;
-      z-index: 9999;
-    }
+  
 
-    /* Landing text section */
-    .landing-text {
-      padding: 40px 20px;
-      max-width: 600px;
-      text-align: center;
-    }
-
-    .landing-text p {
-      font-size: 1.1rem;
-      font-weight: 300;
-      color: black;
-      line-height: 1.6;
-      letter-spacing: 0.01em;
-    }
+@media screen and (max-width: 768px) {
+  .landing h1 {
+    display: flex;
+  }
+}

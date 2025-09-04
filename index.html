@@ -5,14 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nyn Studio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 <body>
+  <header>
+    <div class="fake-cursor" id="cursor">Nyn Space</div>
+
+    <div class="header">
+      <button class="scroll-down"
+>꩜</button>
+    <audio id="bg-audio" src="up and onward.wav"></audio>
+    <p>play / pause</p>
+  </section>
+   </div>
+  </header>
     <div class="container">
      <!-- /* <div class="image-container"><img src="PEDELI.jpg" alt="image of mountains"></div> */ -->
   <section class="landing">
-    <h1>Nyn Space</h1>
-    <button class="scroll-down">꩜</button>
-  </section>
+    <h1>nyn.space</h1>
+  
   <section class="landing-text">
     <div class="text">
 <p>finding the way back to the present moment through meditation and mindfulness.</p>
@@ -34,18 +45,17 @@
       <p>Nyn is the space where everything is possible, where chaos becomes clarity, stress becomes calmness and ideas and creativity flow freely.</p>
     </div>
   </div>
-
-  <!-- Sidebar Menu -->
-  <nav class="sidebar" id="sidebar">
-    <ul>
-      <li><a href="#about" onclick="toggleAbout()">About</a></li>
-      <li><a href="#sessions" onclick="toggleSessions()">Sessions</a></li>
-      <li><a href="#contact" onclick="toggleContact()">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Contact Section -->
-  <section class="contact" id="contact">
+  <div class="sessions-content" >
+    <button class="close-sessions" onclick="closeSessions()">×</button>
+    <h3>Sessions</h3>
+    <p>I offer group and individual sessions, both in person and online. Sessions can be tailored to your needs, whether you are looking for stress relief, improved focus, or a deeper connection to yourself. I also offer workshops and retreats that combine meditation with other practices such as yoga, art, and nature immersion.</p>
+    <br>
+    <p>If you are interested in booking a session or learning more about my offerings, please don't hesitate to reach out. I would love to hear from you!</p>
+  </div>
+  <div class="contact-content">
+    <button class="close-contact" onclick="closeContact()">×</button>
+    <h3>Contact</h3>
+    <p>If you have any questions or inquiries, please feel free to reach out. You can contact me via email or through the contact form on this page.</p>
     <div class="form-wrapper">
       <h2>Get in touch</h2>
       <form>
@@ -60,11 +70,18 @@
         <button type="submit">Send</button>
       </form>
     </div>
-  </section>
+  </div>
 
+  <!-- Sidebar Menu -->
+  <nav class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="#about" onclick="toggleAbout()">About</a></li>
+      <li><a href="#sessions" onclick="toggleSessions()">Sessions</a></li>
+      <li><a href="#contact" onclick="toggleContact()">Contact</a></li>
+    </ul>
+  </nav>
 
   <!-- Custom Cursor -->
-  <div class="cursor"></div>
 
   <script src="script.js"></script>
 </body>

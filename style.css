@@ -11,30 +11,29 @@
       src: url(Baunk.ttf);
     } */
     @font-face {
-     
       font-family: "hello";
-      src: url(Arnaiz.ttf) ;
+      src: url(https://media.nyn.space/Arnaiz.ttf);
     }
 
     @font-face{
       font-family: "satoshi";
-      src: url(Satoshi-Variable.ttf);
+      src: url(https://media.nyn.space/Satoshi-Variable.ttf);
     }
 
      @font-face{
       font-family: "monor";
-      src: url(Monor_Regular.otf);
+      src: url(https://media.nyn.space/Monor_Regular.otf);
     }
  @font-face {
   font-family: "epi";
-  src: url(Epilogue-Variable.ttf);
+  src: url(https://media.nyn.space/Epilogue-Variable.ttf);
  }
 
     body {
       background: white; /* Yellow */
       overflow: hidden;
       cursor: none; /* hide default cursor */
-      background-image: url(PEDELI.jpg);
+      background-image: url(https://media.nyn.space/PEDELI.jpg);
     }
 
 .fake-cursor {

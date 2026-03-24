@@ -1,0 +1,9 @@
+# Media files - served from R2 to reduce build size
+*.wav
+*.jpg
+*.jpeg
+*.png
+*.ttf
+*.otf
+*.woff
+*.woff2
